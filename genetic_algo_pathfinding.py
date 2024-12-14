@@ -27,7 +27,7 @@ class SearchSpaceobstacle:
 class SearchSpace:
     
     solutions = [] # The population of solutions
-    generations = 500 # Amount of iterations
+    generations = 1000 # Amount of iterations
     destination = SearchSpaceobstacle((600, 500), 3) # Goal state
     
     obstacles = (
@@ -173,6 +173,9 @@ class SearchSpace:
 
         #Set data of path to be animated
         animated_solution_positions.set_data(path_x, path_y)
+
+        # Print generation number
+        print(f'Generation: {frame + 1}')
 
         # For animating best performer
         return animated_solution_positions,
