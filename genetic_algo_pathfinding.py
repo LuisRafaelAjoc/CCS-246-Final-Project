@@ -47,7 +47,7 @@ class SearchSpace:
             steps = []
             
             # Give each solution eighteen random steps to perform
-            for i in range(17):
+            for i in range(18):
                 steps.append((rd.uniform(-50, 50), rd.uniform(-50, 50)))
             
             new_solution = Solution(steps) # Create new Solution
@@ -112,7 +112,7 @@ class SearchSpace:
 
     # Randomize one step from a child solution's steps
     def mutation(self, child_steps):
-        mutate = rd.randint(0, 16)
+        mutate = rd.randint(0, 17)
         child_steps[mutate]=((rd.uniform(-50, 50), (rd.uniform(-50, 50))))
         return child_steps
 
