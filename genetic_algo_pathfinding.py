@@ -46,7 +46,7 @@ class SearchSpace:
         for i in range(0, 100, 1):
             steps = []
             
-            # Give each solution ten random steps to perform
+            # Give each solution eighteen random steps to perform
             for i in range(17):
                 steps.append((rd.uniform(-50, 50), rd.uniform(-50, 50)))
             
