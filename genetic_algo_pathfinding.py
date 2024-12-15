@@ -17,7 +17,7 @@ class Solution:
         self.steps = steps
 
 # Used to create obstacles and destination
-class SearchSpaceobstacle:
+class SearchSpaceObject:
 
     def __init__(self, position, radius):
         
@@ -28,16 +28,16 @@ class SearchSpace:
     
     solutions = [] # The population of solutions
     generations = 1000 # Amount of iterations
-    destination = SearchSpaceobstacle((600, 500), 3) # Goal state
+    destination = SearchSpaceObject((600, 500), 3) # Goal state
     
     obstacles = (
-        SearchSpaceobstacle((300, 150), 70),
-        SearchSpaceobstacle((150, 300), 70),
-        # SearchSpaceobstacle((285, 250), 75),
-        SearchSpaceobstacle((550, 150), 110),
-        SearchSpaceobstacle((450, 400), 100),
-        SearchSpaceobstacle((225, 485), 85),
-        # SearchSpaceobstacle((450, 500), 70)
+        SearchSpaceObject((300, 150), 70),
+        SearchSpaceObject((150, 300), 70),
+        # SearchSpaceObject((285, 250), 75),
+        SearchSpaceObject((550, 150), 110),
+        SearchSpaceObject((450, 400), 100),
+        SearchSpaceObject((225, 485), 85),
+        # SearchSpaceObject((450, 500), 70)
     )
 
     def __init__(self):
