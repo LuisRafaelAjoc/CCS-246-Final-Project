@@ -33,11 +33,9 @@ class SearchSpace:
     obstacles = (
         SearchSpaceObject((300, 150), 70),
         SearchSpaceObject((150, 300), 70),
-        # SearchSpaceObject((285, 250), 75),
         SearchSpaceObject((550, 150), 110),
         SearchSpaceObject((450, 400), 100),
-        SearchSpaceObject((225, 485), 85),
-        # SearchSpaceObject((450, 500), 70)
+        SearchSpaceObject((225, 485), 85)
     )
 
     def __init__(self):
@@ -47,7 +45,7 @@ class SearchSpace:
             steps = []
             
             # Give each solution eighteen random steps to perform
-            for i in range(18):
+            for j in range(18):
                 steps.append((rd.uniform(-50, 50), rd.uniform(-50, 50)))
             
             new_solution = Solution(steps) # Create new Solution
