@@ -87,6 +87,7 @@ class SearchSpace:
         # If the new position collides with the destination, set is_destination_found to True
         if self.collision_check(self.destination, solution, new_position) == True:
             solution.is_destination_found = True
+            print('Destination found.')
         return new_position
     
     # Find distance of each solution's last position to the destination
